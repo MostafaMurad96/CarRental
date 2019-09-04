@@ -1,0 +1,384 @@
+body{
+
+}
+.h{
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+.h:hover{
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+/*start upper-bar*/
+.upper-bar{
+    background-image: url("baner.jpg");
+    background-size: cover;
+}
+.upper-bar .container
+{
+    color: #fff;
+}
+.upper-bar .container .egp{
+    padding-top: 15px;
+    margin-right: 5px;
+    padding-bottom: 15px;
+    border: none;
+    border-radius: 0;
+    padding-right: 10px;
+}
+.upper-bar .container .mng{
+    padding-top: 15px;
+    margin-right: 5px;
+    padding-bottom: 15px;
+    border: none;
+    border-radius: 0;
+    padding-right: 19px;
+}
+.upper-bar .container .sgn{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 35px;
+    padding-left: 35px;border: none;
+    border-radius: 0;
+
+}
+.upper-bar .container .sgn span{
+    text-align: center;
+    margin-left: 5px;
+    position: relative;
+    bottom: 5px;
+}
+.upper-bar hr{
+    color: #fff;
+}
+.upper-bar .header{
+    color: #fff;
+    background-color: #0a5489;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+}
+.upper-bar .header h3{
+    font-size: 23px;
+    font-weight: normal;
+}
+.upper-bar .row .my-form{
+    background-color: #f3ce56;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    padding-bottom: 50px;
+}
+.upper-bar .row .my-form input{
+    margin-bottom: 15px;
+}
+.upper-bar .row .my-form .check{
+    margin: 0;
+}
+.upper-bar .row .my-form .mybtn{
+    padding-right: 30px;
+    padding-left: 30px;
+}
+    /*end upper-bar*/
+
+/*start signup*/
+.signup{
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+.feild1 h1{
+    font-size: 30px;
+}
+.feild1 i{
+    margin-left:  52px;
+}
+.hd1{
+    padding: 10px 0;
+    margin-bottom: 20px;
+    background: #0A2C4F;
+    color: white
+}
+/*end signup*/
+
+/*start mng booking*/
+.mng-booking{
+    background-color: #ddd;
+    padding-bottom: 30px;
+}
+.mng-booking .container .row .ph{
+    background-color: #fff !important;
+    margin-top: 30px;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+}
+.mng-booking .container .row .ph1{
+    background-color: #fff !important;
+    margin-top: 5px;
+    padding-top: 30px;
+    padding-bottom:150px;
+    border-radius: 5px;
+
+}
+.mng-booking .container .row .ph1 i{
+    margin-left: 10px;
+    background-color: #ddd;
+    color: #fff;
+    border-radius: 50%;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 10px;
+}
+.mng-booking .container .row .ph1 h2{
+    color: #0a5489;
+    font-size: 20px;
+    margin-right: 60px;
+}
+.mng-booking .container .row .ph1 span{
+    color: #818182;
+    line-height: 1.2;
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+    margin-top: 10px;
+}
+.mng-booking .container .row .ph1 img{
+    margin-left: 20px;
+}
+.mng-booking .container .row .ph i{
+    background-color: #f3ce56;
+    border-radius: 50%;
+    padding-left: 10px;
+    color: white;
+    margin-left: 10px;
+}
+.mng-booking .container .row .ph span{
+    margin-left: 20px;
+    color: #0a5489;
+    font-size: 25px;
+
+}
+.mng-booking .container .row .glob {
+    background-color: #fff !important;
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+.mng-booking .container .row .glob h2{
+    color: #0a5489;
+    font-size: 20px;
+    margin-right: 60px;
+}
+.mng-booking .container .row .glob span{
+    color: #818182;
+    line-height: 1.2;
+    display: inline-block;
+    width: 80%;
+}
+.mng-booking .container .row .glob i{
+    background-color: #0a5489;
+    color: #fff;
+    border-radius: 50%;
+    margin-left:20px;
+}
+.mng-booking .container .row .com{
+    background-color: #fff !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    margin-top: -15px;
+    margin-bottom: 5px;
+}
+.mng-booking .container .row .com h2{
+    color: #0a5489;
+    font-size: 20px;
+    margin-right: 60px;
+}
+.mng-booking .container .row .com span{
+    color: #818182;
+    line-height: 1.2;
+    display: inline-block;
+    width: 80%;
+}
+.mng-booking .container .row .com i{
+    background-color: #ddd;
+    border-radius: 50%;
+    color: white;
+    padding: 10px 10px 10px 10px;
+}
+.mng-booking .container .row .bk{
+    background-color: #fff !important;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.mng-booking .container .row .bk i{
+    margin-left:20px;
+    background-color: #0a5489;
+    color: #fff;
+    border-radius: 50%;
+}
+.mng-booking .container .row .bk h2{
+    color: #0a5489;
+    font-size: 20px;
+    margin-right: 60px;
+ }
+.mng-booking .container .row .bk span{
+    color: #818182;
+    line-height: 1.2;
+    display: inline-block;
+    width: 80%;
+}
+.mng-booking .container .row .last{
+    background-color: #fff !important;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.mng-booking .container .row .last i{
+    margin-left:20px;
+    background-color: #0a5489;
+    color: #fff;
+    border-radius: 50%;
+}
+.mng-booking .container .row .last h2{
+    color: #0a5489;
+    font-size: 20px;
+    margin-right: 60px;
+}
+.mng-booking .container .row .last span{
+    color: #818182;
+    line-height: 1.2;
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+}
+/*end mng booking*/
+
+/*start most popular*/
+.most-pop{
+    background-color: #f8f8f8;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.most-pop .h-pop{
+    color: #0f61a0;
+    margin-bottom: 15px;
+}
+.most-pop .container .row .dubi{
+    background-color: #fff;
+}
+.most-pop .container .row .dubi h3{
+    color: #0f61a0;
+}
+.most-pop .container .row .dubi .card-img{
+    margin-top: 20px;
+    width: 60%;
+    height:50%;
+    margin-left: 30px;
+}
+/*end most popular*/
+
+/*start questions*/
+.questions{
+
+}
+.questions .container{
+    border: 1px solid #ddd;
+    height: 1200px;
+}
+.questions .container h2{
+    color: #0f61a0;
+    margin-top: 30px;
+}
+.questions .container .row .steps h3{
+    color: #0f61a0;
+    font-size: 22px;
+}
+.questions .container .row .steps ul :first-child{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.questions .container .row .steps ul :last-child{
+    list-style: none;
+    margin-top: 10px;
+    width: 70%;
+}
+.questions .container .row .steps .words{
+    color: black;
+    font-weight: bold;
+}
+.questions .container .row .steps .answ{
+    display: inline-block;
+    width: 70%;
+}
+.questions .container .row .steps a{
+    color: #0f61a0;
+    font-weight: bold;
+}
+/*end questions*/
+
+/*start subscribe*/
+.sub{
+    background-color: #4683b8;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+.sub .container .row .logo h1{
+    color: #fff;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.sub .container .row .logo span{
+    color: #fff;
+    font-size: 12px;
+    position: relative;
+    bottom: 20px;
+}
+.sub .container .row .user-data
+{
+    margin-top: 30px;
+}
+.sub .container .row .user-data button{
+    background-color: #6aaceb;
+}
+.sub .container .row .user-data input{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+.sub .container .row .user-data span{
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+}
+.bg-white{
+    padding-top: 30px;
+}
+/*end subscribe*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

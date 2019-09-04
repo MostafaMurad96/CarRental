@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home</title>
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<script src="jquery-3.4.1.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="sign.js"></script>
+<!--start upper bar-->
+<div class="upper-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <button class="h btn-group btn">Rentalcars.com</button>
+            </div>
+            <div class="col">
+                <button class="egp btn btn-primary"><a href="EGP.html"></a>EGP Egypt Pounds</button>
+                <button class="mng btn btn-primary"><a href="managebooking.html"></a>Manage booking</button>
+                <button class="sgn btn btn-primary" data-toggle="modal"
+                        data-target="#exampleModalLong1"><i class="fa fa-user fa-2x"></i><span>Sign in</span></button>
+            </div>
+        </div>
+        <hr>
+        <div class="header row">
+            <div class="col-lg-12">
+                <h2>Car Hire – Search, Compare & Save</h2>
+                <h3>Compare 900 companies at over 60,000 locations. Best price guaranteed</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="my-form">
+                    <form action="search" method="post">
+                        <h2 class="h2">Let’s find your ideal car</h2>
+                        <label>Pick-up Location</label>
+                        <input class="form-control" type="text" placeholder="Location" name="loc">
+                        <label>Pick-up Date</label>
+                        <input class="form-control" type="date"  name="date">
+                        <input type="time" class="form-control">
+                        <input type="radio"><span>Driver aged between 30 – 65?</span><br>
+                        <span>Purpose of rental (optional)</span>
+                        <input class="check" type="radio" name="Purpose" value="Business">Business
+                        <input class="check" type="radio" name="Purpose" value="Personal">Personal<br>
+                        <input class="check" type="radio" checked disabled>No credit card fees<br>
+                        <input class="check" type="radio" checked disabled>No amendment fees<br>
+                        <input class="check" type="radio" checked disabled>24/7 phone support
+                        <input type="submit" name="search"
+                               class="mybtn float-right btn btn-primary btn-success btn-lg" value="Search"></input>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end upper bar-->
+
+<!-- start signin-->
+<div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="signup" >
+                <button type="button" style="color: white; padding: 5px 10px;"class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="feild1 text-center" id="sign-form">
+                    <div class="hd1">
+                        <i class="fas fa-user-plus fa-2x"></i>
+                        <h1>Sign in</h1>
+                        <p class="text-capitalize lead">Welcome</p>
+                    </div>
+                    <div class="container text-left">
+                        <form class="needs-validation" novalidate>
+                            <div class="form-row">
+                                <div class="col-md-12 mb-3">
+                                    <label for="validationCustomUsername">Email</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="validationCustomUsername" placeholder="Enter A New Email" aria-describedby="inputGroupPrepend" required>
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend">@yahoo.com</span>
+                                        </div>
+                                        <div class="invalid-feedback text-center">
+                                            Please Enter A Valid Email.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationCustom06">Your Password</label>
+                                    <input type="password" class="form-control" id="validationCustom06" placeholder="Your Password" required>
+                                    <div class="invalid-feedback text-center">
+                                        Please Enter A Password atleast 8 char
+                                    </div>
+                                    <div class="valid-feedback">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+
+                                    <div class="valid-feedback">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary btn-success" type="submit">Sign in</button>
+                            <span class="mr-auto btn-warning" style="position:relative;left: 60px;"> Dont Have an
+                                Account!?</span>  <button
+                                class="btn btn-primary btn-sm float-right"
+                                                                      data-toggle="modal"
+                                data-target="#exampleModalLong2" onclick="hidesignin()">Sign up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end signin-->
+
+<!-- start signup-->
+<div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="signup" >
+                <button type="button" style="color: white; padding: 5px 10px;"class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="feild2 text-center">
+                    <div class="hd1">
+                        <i class="fas fa-user-plus fa-2x"></i>
+                        <h1>SignUp</h1>
+                        <p class="text-capitalize lead">hello in our page you can Signup from her</p>
+                    </div>
+                    <div class="container text-left">
+                        <form class="needs-validation" novalidate>
+                            <div class="form-row">
+                                <div class="col-md-12 mb-3">
+                                    <label for="validationCustomUsername">Email</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="validationCustomUsername2"
+                                               placeholder="Enter A New Email" aria-describedby="inputGroupPrepend" required>
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend2">@yahoo.com</span>
+                                        </div>
+                                        <div class="invalid-feedback text-center">
+                                            Please Enter A Valid Email.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationCustom06">Your Password</label>
+                                    <input type="password" class="form-control" id="validationCustom07"
+                                           placeholder="Your Password" required>
+                                    <div class="invalid-feedback text-center">
+                                        Please Enter A Password atleast 8 char
+                                    </div>
+                                    <div class="valid-feedback">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationCustom05">Confirm Password</label>
+                                    <input type="password" class="form-control" id="validationCustom05" placeholder="Confirm Password"  required>
+                                    <div class="invalid-feedback text-center">
+                                        Please Enter A Same Password
+                                    </div>
+                                    <div class="valid-feedback">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary btn-block" type="submit" id="signup" onclick="showsignin()">
+                                SignUp</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end signup-->
+<div class="bg-white"></div>
+<!--start managebooking-->
+<div class="mng-booking">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="ph">
+                    <i class="float-left fa fa-phone-volume fa-2x"></i><span class="float-left">01119545079</span>
+                </div>
+                <div class="ph1">
+                    <i class="float-left fa fa-comment fa-2x"></i>
+                    <h2>Highly recommended by our customers</h2>
+                    <span>We are rated 7.4 out of 10 on TRUSTPILOT based on 92,028 reviews.</span>
+                    <span>"Excellent car hire at Malaga Airport"</span>
+                    <img class="float-left" src="../IMGS/greek-flag.jpg"><span>Mr K. Munns</span>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="glob">
+                    <i class="float-left fa fa-globe fa-2x"></i><h2>World's biggest online car rental service</h2>
+                    <span>Working with over 900 companies in 160 countries, we can find the right car in the right
+                        place, at the right price.</span>
+                </div>
+                <div class="bk">
+                    <i class="float-left fa fa-briefcase fa-2x"></i><h2>Manage your booking online</h2>
+                    <span class="lead">Cancel or amend your car or dates online quickly and easily
+                        the right
+                        place, at the right price.</span>
+                </div>
+                <div class="last">
+                    <i class="float-left fa fa-star fa-2x"></i><h2>Rated by more than 3.5 million people</h2>
+                    <span>We ask each of our customers to rate the company that provided their car. Check the scores - and make the right choice.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end managebooking-->
+
+<!--start most popular-->
+<div class="most-pop">
+    <div class="container">
+       <h2 class="h-pop">Our most popular destinations</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="dubi">
+
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img  src="../IMGS/dubia.jpg" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="card-title">Dubai</h3>
+                                    <img src="../IMGS/dflag.jpg" style="width: 20px;height: 20px;">
+                                    <span>U.A.E.</span>
+                                    <hr>
+                                    <h5>Mr A. Rizg said</h5>
+                                    <span>"Excellent experiance"</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dubi">
+
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img  src="../IMGS/cairo.jpg" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="card-title">Cairo</h3>
+                                    <img src="../IMGS/egypt-flag.jpg" style="width: 20px;height: 20px;">
+                                    <span>Egypt</span>
+                                    <hr>
+                                    <h5>Mr M.murad said</h5>
+                                    <span>"Good care about client"</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dubi">
+
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img  src="milan.jpg" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="card-title">Milan</h3>
+                                    <img src="italy.jpg" style="width: 20px;height: 20px;">
+                                    <span>Italy</span>
+                                    <hr>
+                                    <h5>Mr K. Wolski said</h5>
+                                    <span>"Good care about client"</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="dubi">
+
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img  src="los.jpg" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="card-title">Los Angeles</h3>
+                                    <img src="usa-flag.jpg" style="width: 20px;height: 20px;">
+                                    <span>USA</span>
+                                    <hr>
+                                    <h5>Mr G. Godwin said</h5>
+                                    <span>"Excellent rental car and good value"</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dubi">
+
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img  src="athen.jpg" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="card-title">Athens</h3>
+                                    <img src="greek-flag.jpg" style="width: 20px;height: 20px;">
+                                    <span>Greece</span>
+                                    <hr>
+                                    <h5>D. Osipov said</h5>
+                                    <span>"And again -- five stars!"</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dubi">
+
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img  src="beirut.jpg" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="card-title">Beirut</h3>
+                                    <img src="lebenon-flag.jpg" style="width: 20px;height: 20px;">
+                                    <span>Lebanon</span>
+                                    <hr>
+                                    <h5>Mr T. Sabbagh said</h5>
+                                    <span>"Excellent experience"</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end most popular-->
+
+<!--start questions-->
+<div class="questions">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="steps">
+                    <h2>Frequently Asked Questions</h2>
+                    <hr>
+                    <h3>What do I need to hire a car?</h3>
+                    <ul>
+                        <li>To book your car, all you need is a credit or debit card. When you pick the car up, you’ll
+                            need:</li>
+                        <li>Your voucher / eVoucher, to show that you’ve paid for the car.</li>
+                        <li>The main driver’s credit / debit card, with enough available funds for the car’s deposit.</li>
+                        <li>Each driver’s full, valid driving licence, which they’ve held for at least 12 months (often 24).</li>
+                        <li>Your passport and any other ID the car hire company needs to see.</li>
+                        <li>Different car hire companies have different requirements, so please make sure you check the car’s terms and conditions as well.</li>
+                    </ul>
+                    <hr>
+                    <h3>How old do I have to be to rent a car?</h3>
+                    <span class="answ">For most car hire companies, the age requirement is between 21 and 70 years old.
+                        If you’re
+                        under 25 or over 70, you might have to pay an additional fee.</span>
+                    <hr>
+                    <h3>Can I book a hire car for someone else?</h3>
+                    <span class="answ">Yes, as long as they meet these requirements. Just fill in their details while you’re
+                        making the reservation.</span>
+                    <hr>
+                    <h3>How do I find the cheapest car hire deal?</h3>
+                    <span class="answ">Yes, as long as they meet these requirements. Just fill in their details while you’re
+                        making the reservation.</span>
+                    <hr>
+                    <h3>Can I book a hire car for someone else?</h3>
+                    <span class="answ">We work with all the major international car hire brands (and lots of smaller local
+                        companies) to bring you a huge choice of cars at the very best prices. That’s how we can find you cheap car hire deals at over 60,000 locations worldwide. To compare prices and find your ideal car at an unbeatable price, just use our search form.</span>
+                    <hr>
+                    <h3>What should I look for when I’m choosing a car?</h3>
+                    <ul>
+                        <li style="list-style: circle"><span class="words">Space:</span>You’ll enjoy your rental far more
+                            if you
+                            choose a car
+                            with
+                            plenty of
+                            room
+                            for your passengers and luggage.</li>
+                        <li style="list-style: circle"><span class="words">Fuel policy:</span>You’ll enjoy your rental far more if you choose a
+                            car with
+                            plenty of room for your passengers and luggage.</li>
+                        <li style="list-style: circle"><span class="words">Location:</span>You’ll enjoy your rental far more if you choose a
+                            car with plenty
+                            of room for your passengers and luggage.</li>
+                    </ul>
+                    <hr>
+                    <h3>Are all fees included in the rental price?</h3>
+                    <span class="answ">The vast majority of our rentals include Theft Protection, Collision Damage
+                        Waiver (CDW),
+                        local taxes, airport surcharges and any road fees. You’ll pay for any ‘extras’ when you pick your car up, along with any young driver, additional driver or one-way fees – but we’ll explain any additional costs before you book your car (and taking your own child seats or GPS can be an easy way to reduce your costs). For more details on what’s included, just check the Ts&Cs of any car you’re looking at.</span>
+                    <hr>
+                    <span class="answ">Any questions? Just visit our <a href="help.html">Help page </a>or
+                        <a href="Contact Us">Contact Us</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<!--end questions-->
+
+<!--start subscribe-->
+<div class="sub">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="logo">
+                    <h1>Rentalcars.com</h1>
+                    <span>Find and book a hire car in over 60,000 locations worldwide</span>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="user-data">
+                   <span>Subscribe for exclusive offers and deals!</span>
+                    <input  type="email" placeholder="Email Address">
+                    <button type="submit" class="btn btn-primary btn-lg">Sign me up!</button>
+                    <span>You can update your email preferences at any time</span>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="user-data">
+                        <input type="checkbox" checked disabled>Exclusive email-only offers</input><br>
+                        <input type="checkbox" checked disabled>Open your inbox & save money</input><br>
+                        <input type="checkbox" checked disabled>Never miss a bargain again</input><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end subscribe-->
+<!--end content-->
+<script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity=" sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin=" anonymous ">
+</script>
+<script src=" https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity=" sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin=" anonymous ">
+</script>
+<script src=" https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity=" sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin=" anonymous "></script>
+<script src="../javascript/main.js"></script>
+</body>
+</html>
