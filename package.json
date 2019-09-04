@@ -1,0 +1,16 @@
+{
+  "name": "CarRental",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d CarRental"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage":"https://MostafaMurad96.github.io/CarRentalDesign",
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}
